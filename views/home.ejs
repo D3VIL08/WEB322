@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css">
+    <title>Lego Collection</title>
+</head>
+<body>
+    <%- include('partials/navbar', {page: '/'}) %>
+    
+    <div class="container mx-auto my-8">
+        <div class="hero bg-base-200 rounded-lg p-10">
+            <div class="hero-content text-center">
+                <div class="max-w-md">
+                    <h1 class="text-5xl font-bold">Welcome to the Lego Collection</h1>
+                    <p class="py-6">Discover a world of creativity and adventure with our extensive Lego set collection.</p>
+                    <a href="/lego/sets" class="btn btn-primary">Explore Sets</a>
+                </div>
+            </div>
+        </div>
+
+        <section class="hero bg-blue-500 text-white p-10 text-center">
+          <h1 class="text-4xl mb-4">Explore Our Lego Collection</h1>
+      </section>
+
+      <section class="grid grid-cols-1 md:grid-cols-3 gap-8 p-10">
+          <div class="card bg-white p-6 rounded-lg shadow-md">
+              <img src="https://cdn.rebrickable.com/media/sets/033-1.jpg" alt="Lego Set 1" class="w-full h-64 object-cover mb-4 rounded"/>
+              <h2 class="text-2xl mb-2">Farm Animals</h2>
+              <p class="mb-4">Cow go moo, dog go bark, click Logo Collection to go to main page.</p>
+              <a href="/lego/sets/033-1" class="btn bg-blue-500 text-white py-2 px-4 rounded">View Set</a>
+          </div>
+          <div class="card bg-white p-6 rounded-lg shadow-md">
+              <img src="https://cdn.rebrickable.com/media/sets/042-1.jpg" alt="Lego Set 2" class="w-full h-64 object-cover mb-4 rounded"/>
+              <h2 class="text-2xl mb-2">Jumbo Brick Pull Toy</h2>
+              <p class="mb-4">Big Bricks for Big Boys.</p>
+              <a href="/lego/sets/042-1" class="btn bg-blue-500 text-white py-2 px-4 rounded">View Set</a>
+          </div>
+          <div class="card bg-white p-6 rounded-lg shadow-md">
+              <img src="https://cdn.rebrickable.com/media/sets/0241357594-1.jpg" alt="Lego Set 3" class="w-full h-64 object-cover mb-4 rounded"/>
+              <h2 class="text-2xl mb-2">Star Wars: Build Your Own Adventure: Galactic Mission</h2>
+              <p class="mb-4">Ever wonder how it feels like to attack the death star? Nows your chance to find out.</p>
+              <a href="/lego/sets/0241357594-1" class="btn bg-blue-500 text-white py-2 px-4 rounded">View Set</a>
+          </div>
+      </section>
+
+        <section class="my-10">
+            <h2 class="text-4xl font-bold text-center mb-6">Latest Sets</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Dynamically generated Lego Set cards -->
+                <% /* Example Set Card */ %>
+                <div class="card bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="https://cdn.rebrickable.com/media/sets/0241187567-1.jpg" alt="Ninjago: Build Your Own Adventure" class="rounded-xl">
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Ninjago: Build Your Own Adventure</h2>
+                        <p>Ninjago: Build Your Own Adventure" is part of the LEGO Build Your Own Adventure series that combines engaging storytelling with the creativity of LEGO building. This book set includes a Ninjago-themed story filled with exciting quests and challenges for the characters, along with LEGO bricks to build specific models related to the story. 
+                        </p>
+                        <div class="card-actions">
+                            <a href="/lego/sets/set-num" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <% /* Repeat for other sets */ %>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
