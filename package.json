@@ -1,22 +1,27 @@
 {
-  "name": "a2_devpatel_171174212",
+  "name": "solution",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "tw:build": "tailwindcss -i ./public/css/tailwind.css -o ./public/css/main.css"
+    "tw:build": "tailwindcss build ./public/css/tailwind.css -o ./public/css/main.css"
   },
-  "author": "Devkumar Pankajbhai Patel",
+  "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "@tailwindcss/typography": "^0.5.10",
-    "daisyui": "^4.7.3",
-    "tailwindcss": "^3.4.1"
-  },
   "dependencies": {
+    "@tailwindcss/typography": "^0.5.10",
+    "daisyui": "^3.8.1",
+    "dotenv": "^16.4.5",
     "ejs": "^3.1.9",
-    "express": "^4.18.3"
+    "express": "^4.19.2",
+    "node": "^18.20.2",
+    "pg": "^8.11.5",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.37.2"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
   }
 }
