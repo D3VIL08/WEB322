@@ -1,13 +1,10 @@
 const mongoose = require('mongoose');
 require('dotenv').config();
 
-mongoose.connect(process.env.DB_CONNECTION_STRING, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true
-})
+mongoose.connect(process.env.DB_CONNECTION_STRING)
   .then(() => console.log('MongoDB connection has been established successfully.'))
   .catch(err => console.log('Unable to connect to the database:', err));
-
+  
 const themeSchema = new mongoose.Schema({
   name: { type: String, required: true },
   description: String
